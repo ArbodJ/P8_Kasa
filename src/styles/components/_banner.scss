@@ -1,0 +1,95 @@
+.banner-container {
+  position: relative;
+  width: 90%;
+  margin-top: 20px;
+  height: 111px;
+  border-radius: 10px;
+  
+  .banner-dark {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 111px;
+    border-radius: 10px;
+
+    .banner-box-img{
+      position: absolute;
+      width: 100%;
+      height: 111px;
+      &::before{
+        content: "";
+        z-index: 10;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 111px;
+        border-radius: 10px;
+        background: #00000047;
+      }
+      .banner-img{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 111px;
+        border-radius: 10px;
+      }
+
+      .banner-box-title {
+        position: absolute;
+        width: 100%;
+        height: 111px;
+        .banner-title {
+          position: absolute;
+          top: 11%;
+          left: 6%;
+          z-index: 20;
+          width: 56%;
+          font-size: 24px;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px){
+  .banner-container .banner-dark .banner-box-img .banner-box-title .banner-title{
+    margin: 0;
+    width: 100%;
+    height: 111px;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1024px){
+  .banner-container{
+    margin-top:  40px;
+    height: 223px;
+  }
+  .banner-container .banner-dark{
+    height: 223px;
+  }
+  .banner-container .banner-dark .banner-box-img{
+    height: 223px;
+  }
+  .banner-container .banner-dark .banner-box-img::before{
+    height: 223px;
+  }
+  .banner-container .banner-dark .banner-box-img .banner-img{
+    height: 223px;
+  }
+  .banner-container .banner-dark .banner-box-img .banner-box-title .banner-title{
+    margin: 0;
+    width: 100%;
+    height: 223px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,10 @@
+$color-pink :  #FF6060;
+$color-white: #FFF;
+$color-black: #000;
+
+@mixin center-box {
+  display:  flex;
+  justify-content:  center;
+}
+
+

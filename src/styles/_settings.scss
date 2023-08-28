@@ -1,0 +1,21 @@
+@import "./utils/var";
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+#root {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.box-pages-container {
+  border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
