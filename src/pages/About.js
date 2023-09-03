@@ -1,14 +1,15 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import BannerAbout from '../components/BannerAbout';
+import DropDownBox from '../components/DropDownBox';
 
 const About = () => {
   return (
     <div className='box-pages-container'>
       <Navigation />
-      <div className="title">
-        <h1>A Propos</h1>
-      </div>
+      <BannerAbout />
+      <DropDownBox />
       <Footer />
     </div>
   );

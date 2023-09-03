@@ -1,0 +1,105 @@
+.about-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 1023px;
+
+  .box-button-about{
+    display: flex;
+    border: none;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background: $color-pink;
+    cursor: pointer;
+
+    .text-icon-button{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 98%;
+      height: 30px;
+
+      .title-button{
+        display: flex;
+        font-size: 13px;
+        color: $color-white;
+      }
+      .fa-chevron-up{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        color: $color-white;
+      }
+      .fa-chevron-down{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        color: $color-white;
+      }
+    }
+  }
+  .box-text-about{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background: #F6F6F6;
+    border-radius: 5px;
+    
+    .text-about{
+      color: $color-pink;
+      line-height: 17.11px;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-box .box-button-about{
+    height: 41px;
+  }
+  .about-box .box-button-about .text-icon-button{
+    height: 41px;
+  }
+  .about-box .box-button-about .text-icon-button .title-button{
+    font-size: 18px;
+  }
+  .about-box .box-button-about .text-icon-button .fa-chevron-up{
+    font-size: 24px;
+  }
+  .about-box .box-text-about .text-about{
+    line-height: 25.67px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-box {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .about-box .box-button-about{
+    margin-top: 30px;
+    height: 52px;
+  }
+  .about-box .box-button-about .text-icon-button{
+    height: 52px;
+  }
+  .about-box .box-button-about .text-icon-button .title-button{
+    font-size: 24px;
+  }
+  .about-box .box-button-about .text-icon-button .fa-chevron-up{
+    font-size: 32px;
+  }
+  .about-box .box-text-about .text-about{
+    line-height: 25.67px;
+    font-size: 18px;
+  }
+}

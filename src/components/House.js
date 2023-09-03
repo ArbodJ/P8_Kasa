@@ -9,13 +9,11 @@ const House = () => {
     <div className='house-card'>
       <div className="box-card">{logements.map(logement => {
         return (
-          <Link to="/rentfiles" className="card" key={logement.id}>
-                {logement.cover}
-              {/* <Link to="/rentfiles" className='link-card'> */}
+          <Link to={`/rentfiles/${logement.id}`} className="card" key={logement.id}>
+              <img src={logement.cover} alt={logement.title} className='card-img' />
               <div className="card-box-title">
                 <p className="card-title">{logement.title}</p>
               </div>
-              {/* </Link> */}
           </Link>
         )
         })}

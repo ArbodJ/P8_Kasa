@@ -1,0 +1,44 @@
+.box-error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  font-family: 'Montserrat', sans-serif;
+  color: $color-pink;
+
+  .box-error-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0 20px 0;
+    .title-error{
+      display: flex;
+      margin: 0;
+      font-size: 96px;
+    }
+  }
+
+  .box-error-phrase{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+    .explain-error{
+      display: flex;
+      text-align: center;
+      font-size: 18px;
+      width: 80%;
+    }
+  }
+
+  .box-error-return-link{
+    display: flex;
+    margin: 20px 0 40px 0;
+    .link-return{
+      display: flex;
+      font-size: 14px;
+      color: $color-pink;
+    }
+  }
+
+}
