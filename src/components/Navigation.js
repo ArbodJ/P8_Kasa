@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from "../assets/logo/LOGO.png";
 
 const Navigation = () => {
+  
   return (
     <div className='logo-container'>
-      <img className="logo" src="./LOGO.png" alt="logo Kasa"  />
+      <img className="logo" src={logo} alt="logo Kasa"  />
       <div className="link-container">
         <ul className='ul-link-pages'>
           <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>

@@ -1,8 +1,9 @@
 .logo-container {
   display: flex;
+  justify-content: space-between;
   width: 90%;
   height: 50px;
-  margin-top: 20px;
+  margin: 20px 0;
   .logo {
     width: 145px;
     height: 50px;
@@ -13,7 +14,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 79%;
+  width: 55%;
   .ul-link-pages {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,6 @@
     }
     .li-link-page {
       display: flex;
-      font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       width: 100%;
       height:  17px;
@@ -43,6 +43,9 @@
 @media screen and (min-width: 1024px) {
   .link-container{
     width: 84%;
+  }
+  .logo-container{
+    height: 65px;
   }
   .logo-container .logo {
     width: 210px;
