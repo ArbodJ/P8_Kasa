@@ -20,11 +20,11 @@ const RentFile = () => {
       <Navigation />
       <Carrousel pictures={flatList.pictures} />
       <div className="box-title-rate-owner">
-        <TitlePageRentFile />
-        <OwnerAndRatePageRentFile host={flatList.host} rate={flatList.rating}/>
+        <TitlePageRentFile title={flatList.title} location={flatList.location} tags={flatList.tags} />
+        <OwnerAndRatePageRentFile host={flatList.host} rate={flatList.rating} />
       </div>
       <div className="box-options-rent">
-        <Collapse title="Description" description={flatList.description}/>
+        <Collapse title="Description" description={flatList.description} />
         <Collapse title="Èquipement" description={optionsList} />
       </div>
       <Footer />
