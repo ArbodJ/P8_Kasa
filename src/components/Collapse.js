@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Collapse = (props) => {
   const [open, setOpen ] =  useState(false);
   return (
-    <div className='option-box'>
+    <div className='option-box option-box-rent'>
       <button className='box-button-about' onClick={() => setOpen(!open)}>
         <div className="text-icon-button">
           <p className="title-button">{props.title}</p>
