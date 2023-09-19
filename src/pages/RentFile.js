@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import TitlePageRentFile from '../components/TitlePageRentFile';
 import OwnerAndRatePageRentFile from '../components/OwnerAndRatePageRentFile';
+import PageNotFound from '../pages/PageNotFound';
 import Collapse from '../components/Collapse';
 
 const RentFile = () => {
@@ -13,8 +14,10 @@ const RentFile = () => {
   const flatList = houses.find(flat => flat.id === params.id);
   const optionsList = flatList?.equipments.map((equipment, id) => {
     return <li className="list-option" key={id} equipments={equipment}>{equipment}</li>
-  })
-  // console.log(flatList);
+  });
+  
+if (flatList){
+
   return (
     <div className='box-pages-container'>
       <Navigation />
@@ -29,7 +32,10 @@ const RentFile = () => {
       </div>
       <Footer />
     </div>
-  );
+  ) 
+} else { 
+  return <PageNotFound />
+}
 };
 
 export default RentFile;

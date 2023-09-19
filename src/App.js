@@ -6,8 +6,7 @@ import PageNotFound from "./pages/PageNotFound";
 import RentFile from "./pages/RentFile";
 
 const App = ()  => {
-  // const id  = useParams();
-  // console.log(id);
+ 
   return (
     <BrowserRouter>
       <Routes>

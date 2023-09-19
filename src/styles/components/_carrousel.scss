@@ -34,6 +34,7 @@
   .number-img-slide{
     position: absolute;
     top: 89%;
+    display: none;
 
     .display-number{
       color: $color-white;
@@ -57,6 +58,9 @@
         font-size: 53px;
       }
     }
+  }
+  .slide-box .number-img-slide{
+    display: block;
   }
   .slide-box .number-img-slide .display-number{
     font-size: 15px;
